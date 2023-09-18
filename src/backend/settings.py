@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'dgfs-site'
+    'dgfs_site'
 ]
 
 MIDDLEWARE = [
@@ -75,10 +75,14 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'dgfs_plateform_db',
+    'USER': 'deveenhollow',
+    'PASSWORD': 'Hg0aESpZD5FU',
+    'HOST': 'ep-fragrant-frost-80055641.us-east-2.aws.neon.tech',
+    'PORT': '5432',
+  }
 }
 
 
